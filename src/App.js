@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Routes, Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import NavBar from './NavBar';
 import Login from './Login';
 import Dashboard from "./Dashboard";
@@ -11,7 +11,7 @@ import NoMatchPage from "./NoMatchPage";
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter basename="/react-ecommerce-app">
+      <HashRouter>
         <NavBar />
         <div className="container-fluid">
           <Routes>
@@ -22,7 +22,7 @@ export default class App extends Component {
             <Route path="*" element={<NoMatchPage />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
