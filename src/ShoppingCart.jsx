@@ -54,7 +54,7 @@ export default class ShoppingCart extends Component {
     // });
 
     let response = await fetch(
-      "https://my-first-react-ecommerce-app.herokuapp.com/api",
+      "http://localhost:5000/products",
       {method: "GET"}
     );
     let products = await response.json();
