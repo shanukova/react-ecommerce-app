@@ -62,7 +62,7 @@ export default class Login extends Component {
     console.log(this.state);
 
     let response = await fetch(
-      `http://localhost:5000/users?email=${this.state.email}&password=${this.state.password}`,
+      `https://my-first-react-ecommerce-app.herokuapp.com/users?email=${this.state.email}&password=${this.state.password}`,
       {method: "GET"}
     );
     let body = await response.json();
