@@ -11,7 +11,7 @@ import NoMatchPage from "./NoMatchPage";
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/react-ecommerce-app">
         <NavBar />
         <div className="container-fluid">
           <Routes>
